@@ -1,3 +1,4 @@
+// Traditional nested callbacks.
 setTimeout(function(){
     console.log('one')
     setTimeout(function(){
@@ -8,6 +9,7 @@ setTimeout(function(){
     },1000);
 }, 1000);
 
+// Same result without nesting.
 function four(cb){
     setTimeout(function(){
         console.log('four')
