@@ -20,6 +20,7 @@ delay(100)
     function arithmetic(number){
         return new Promise(function(resolve, reject){
             setTimeout(function(){resolve(number)}, 1000);
+            console.log(resolve);
         })
     }
 
